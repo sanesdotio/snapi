@@ -1,0 +1,33 @@
+{
+	"name": "snapi",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"build": "npx tsc",
+		"start": "node dist/main.js",
+		"dev": "npx tsc && nodemon dist/main.js",
+		"test": "vitest --run",
+		"generate": "drizzle-kite generate",
+		"migrate": "drizzle-kit migrate"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.15.0",
+	"dependencies": {
+		"drizzle-orm": "^0.44.5",
+		"express": "^5.1.0",
+		"postgres": "^3.4.7"
+	},
+	"devDependencies": {
+		"@types/express": "^5.0.3",
+		"@types/node": "^24.3.1",
+		"dotenv": "^17.2.2",
+		"drizzle-kit": "^0.31.4",
+		"nodemon": "^3.1.10",
+		"typescript": "^5.9.2",
+		"vitest": "^3.2.4"
+	}
+}
